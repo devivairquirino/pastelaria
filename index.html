@@ -1,570 +1,568 @@
 ```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastel da Ana</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastel da Ana</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <header class="cabecalho">
-        <a href="#inicio" class="logo">
-            <span class="logo-icone">🥟</span>
-            <span>Pastel da Ana</span>
+  <header class="cabecalho">
+    <a href="#inicio" class="logo">
+      <span class="logo-icone">🥟</span>
+      <span>Pastel da Ana</span>
+    </a>
+
+    <button class="botao-menu" id="botao-menu">☰</button>
+
+    <nav class="menu" id="menu">
+      <a href="#inicio">Início</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="inicio" id="inicio">
+      <div class="imagem-principal">
+        <img src="imagens/foto-pasteis.jpg" alt="Pastéis da Pastel da Ana">
+        <div class="selo">⭐ +20 sabores<br><small>feitos na hora</small></div>
+      </div>
+
+      <p class="etiqueta">PASTELARIA ARTESANAL</p>
+
+      <h1>
+        Pastéis dourados,<br>
+        feitos com <span>amor.</span>
+      </h1>
+
+      <p class="texto-inicial">
+        Massa crocante, recheio generoso e aquele sabor de casa.
+        Dá uma fome só de olhar!
+      </p>
+
+      <div class="botoes-inicio">
+        <a class="botao botao-principal" href="#cardapio">
+          Ver cardápio
         </a>
 
-        <button class="botao-menu" id="botao-menu">☰</button>
+        <a class="botao botao-claro" href="#ofertas">
+          Promoções do dia
+        </a>
+      </div>
+    </section>
 
-        <nav class="menu" id="menu">
-            <a href="#inicio">Início</a>
-            <a href="#ofertas">Ofertas</a>
-            <a href="#cardapio">Cardápio</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
 
-    <main>
+    <section class="secao" id="ofertas">
 
-        <section class="inicio" id="inicio">
-            <div class="imagem-principal">
-                <img src="imagens/foto-pasteis.jpg" alt="Pastéis da Pastel da Ana">
-                <div class="selo">⭐ +20 sabores<br><small>feitos na hora</small></div>
-            </div>
+      <p class="titulo-pequeno">PROMOÇÕES</p>
 
-            <p class="etiqueta">PASTELARIA ARTESANAL</p>
+      <h2>Ofertas para alegrar o dia</h2>
 
-            <h1>
-                Pastéis dourados,<br>
-                feitos com <span>amor.</span>
-            </h1>
+      <div class="linha-titulo"></div>
 
-            <p class="texto-inicial">
-                Massa crocante, recheio generoso e aquele sabor de casa.
-                Dá uma fome só de olhar!
-            </p>
+      <div class="lista-ofertas">
 
-            <div class="botoes-inicio">
-                <a class="botao botao-principal" href="#cardapio">
-                    Ver cardápio
-                </a>
+        <article class="cartao-oferta">
+          <span class="etiqueta-oferta">
+            MAIS VENDIDO
+          </span>
 
-                <a class="botao botao-claro" href="#ofertas">
-                    Promoções do dia
-                </a>
-            </div>
-        </section>
+          <h3>Combo Duplo</h3>
 
+          <p>2 pastéis + 2 bebidas</p>
 
-        <section class="secao" id="ofertas">
+          <strong>R$ 19,90</strong>
 
-            <p class="titulo-pequeno">PROMOÇÕES</p>
+          <del>R$ 22,90</del>
+        </article>
 
-            <h2>Ofertas para alegrar o dia</h2>
 
-            <div class="linha-titulo"></div>
+        <article class="cartao-oferta">
+          <span class="etiqueta-oferta amarela">
+            ECONOMIZE
+          </span>
 
-            <div class="lista-ofertas">
+          <h3>Trio da Ana</h3>
 
-                <article class="cartao-oferta">
-                    <span class="etiqueta-oferta">
-                        MAIS VENDIDO
-                    </span>
+          <p>2 pastéis doces + 1 salgado</p>
 
-                    <h3>Combo Duplo</h3>
+          <strong>R$ 16,00</strong>
 
-                    <p>2 pastéis + 2 bebidas</p>
+          <del>R$ 18,50</del>
+        </article>
 
-                    <strong>R$ 19,90</strong>
 
-                    <del>R$ 22,90</del>
-                </article>
+        <article class="cartao-oferta">
+          <span class="etiqueta-oferta">
+            SUPER OFERTA
+          </span>
 
+          <h3>Hora do Pastel</h3>
 
-                <article class="cartao-oferta">
-                    <span class="etiqueta-oferta amarela">
-                        ECONOMIZE
-                    </span>
+          <p>Das 14h às 17h, com desconto</p>
 
-                    <h3>Trio da Ana</h3>
+          <strong>-20%</strong>
+        </article>
 
-                    <p>2 pastéis doces + 1 salgado</p>
+      </div>
+    </section>
 
-                    <strong>R$ 16,00</strong>
 
-                    <del>R$ 18,50</del>
-                </article>
+    <section class="secao secao-cardapio" id="cardapio">
 
+      <p class="titulo-pequeno">CARDÁPIO</p>
 
-                <article class="cartao-oferta">
-                    <span class="etiqueta-oferta">
-                        SUPER OFERTA
-                    </span>
+      <h2>Escolha o seu sabor</h2>
 
-                    <h3>Hora do Pastel</h3>
+      <div class="linha-titulo"></div>
 
-                    <p>Das 14h às 17h, com desconto</p>
 
-                    <strong>-20%</strong>
-                </article>
+      <div class="filtros">
 
-            </div>
-        </section>
+        <button class="filtro ativo" data-tipo="salgado">
+          Salgados
+        </button>
 
+        <button class="filtro" data-tipo="doce">
+          Doces
+        </button>
 
-        <section class="secao secao-cardapio" id="cardapio">
+        <button class="filtro" data-tipo="espeto">
+          Espetos
+        </button>
 
-            <p class="titulo-pequeno">CARDÁPIO</p>
+        <button class="filtro" data-tipo="bebida">
+          Bebidas
+        </button>
 
-            <h2>Escolha o seu sabor</h2>
+      </div>
 
-            <div class="linha-titulo"></div>
 
+      <div class="lista-cardapio">
 
-            <div class="filtros">
+        <!-- PASTÉIS SALGADOS -->
 
-                <button class="filtro ativo" data-tipo="salgado">
-                    Salgados
-                </button>
-
-                <button class="filtro" data-tipo="doce">
-                    Doces
-                </button>
-
-                <button class="filtro" data-tipo="espeto">
-                    Espetos
-                </button>
-
-                <button class="filtro" data-tipo="bebida">
-                    Bebidas
-                </button>
-
-            </div>
-
-
-            <div class="lista-cardapio">
-
-                <!-- PASTÉIS SALGADOS -->
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Carne</h3>
-                    </div>
-                    <strong>R$ 13,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Carne e azeitona</h3>
-                    </div>
-                    <strong>R$ 14,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Carne, queijo e azeitona</h3>
-                    </div>
-                    <strong>R$ 15,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Carne e queijo</h3>
-                    </div>
-                    <strong>R$ 14,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Carne e palmito</h3>
-                    </div>
-                    <strong>R$ 15,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Carne, queijo e palmito</h3>
-                    </div>
-                    <strong>R$ 17,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Carne, queijo, palmito e catupiry</h3>
-                    </div>
-                    <strong>R$ 18,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Carne e catupiry</h3>
-                    </div>
-                    <strong>R$ 15,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Pizza</h3>
-                    </div>
-                    <strong>R$ 12,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Queijo</h3>
-                    </div>
-                    <strong>R$ 12,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Queijo e Catupiry</h3>
-                    </div>
-                    <strong>R$ 14,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Frango</h3>
-                    </div>
-                    <strong>R$ 12,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Frango e queijo</h3>
-                    </div>
-                    <strong>R$ 14,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Frango e catupiry</h3>
-                    </div>
-                    <strong>R$ 14,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Frango, queijo e catupiry</h3>
-                    </div>
-                    <strong>R$ 16,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Frango, queijo e palmito</h3>
-                    </div>
-                    <strong>R$ 17,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Frango, palmito e catupiry</h3>
-                    </div>
-                    <strong>R$ 17,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Calabresa e queijo</h3>
-                    </div>
-                    <strong>R$ 14,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Calabresa e catupiry</h3>
-                    </div>
-                    <strong>R$ 14,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Calabresa, queijo e catupiry</h3>
-                    </div>
-                    <strong>R$ 15,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Brócolis e queijo</h3>
-                    </div>
-                    <strong>R$ 13,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Brócolis, queijo e Bacon</h3>
-                    </div>
-                    <strong>R$ 15,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Palmito</h3>
-                    </div>
-                    <strong>R$ 15,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Palmito e queijo</h3>
-                    </div>
-                    <strong>R$ 16,00</strong>
-                </div>
-
-
-                <div class="item-cardapio" data-tipo="salgado">
-                    <div>
-                        <h3>Palmito com Catupiry</h3>
-                    </div>
-                    <strong>R$ 17,00</strong>
-                </div>
-
-
-                <!-- PASTÉIS DOCES -->
-
-                <div class="item-cardapio escondido" data-tipo="doce">
-                    <div>
-                        <h3>Chocolate</h3>
-                    </div>
-                    <strong>R$ 14,00</strong>
-                </div>
-
-
-                <div class="item-cardapio escondido" data-tipo="doce">
-                    <div>
-                        <h3>Doce de leite</h3>
-                    </div>
-                    <strong>R$ 14,00</strong>
-                </div>
-
-
-                <div class="item-cardapio escondido" data-tipo="doce">
-                    <div>
-                        <h3>Romeu e Julieta</h3>
-                    </div>
-                    <strong>R$ 14,00</strong>
-                </div>
-
-
-                <!-- ESPETOS -->
-
-                <div class="item-cardapio escondido" data-tipo="espeto">
-                    <div>
-                        <h3>Espeto</h3>
-                    </div>
-                    <strong>R$ 8,00</strong>
-                </div>
-
-
-                <div class="item-cardapio escondido" data-tipo="espeto">
-                    <div>
-                        <h3>Espeto carneiro</h3>
-                    </div>
-                    <strong>R$ 10,00</strong>
-                </div>
-
-
-                <!-- BEBIDAS -->
-
-                <div class="item-cardapio escondido" data-tipo="bebida">
-                    <div>
-                        <h3>Refrigerante</h3>
-                        <p>Lata 350 ml</p>
-                    </div>
-                    <strong>R$ 5,00</strong>
-                </div>
-
-
-                <div class="item-cardapio escondido" data-tipo="bebida">
-                    <div>
-                        <h3>Suco natural</h3>
-                        <p>Sabores do dia</p>
-                    </div>
-                    <strong>R$ 7,00</strong>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section class="secao" id="contato">
-
-            <p class="titulo-pequeno">SIGA A GENTE</p>
-
-            <h2>Pastel da Ana</h2>
-
-            <p class="texto-central">
-                Acompanhe as novidades, promoções e receitas nas nossas redes.
-            </p>
-
-            <div class="lista-redes">
-
-                <a href="#" class="cartao-rede">
-                    <span>◎</span>
-
-                    <div>
-                        <strong>Instagram</strong>
-                        <small>@pasteldaana</small>
-                    </div>
-                </a>
-
-
-                <a href="#" class="cartao-rede">
-                    <span>f</span>
-
-                    <div>
-                        <strong>Facebook</strong>
-                        <small>/pasteldaana</small>
-                    </div>
-                </a>
-
-
-                <a href="https://wa.me/5511999999999" class="cartao-rede">
-                    <span>◔</span>
-
-                    <div>
-                        <strong>WhatsApp</strong>
-                        <small>Peça pelo WhatsApp</small>
-                    </div>
-                </a>
-
-            </div>
-        </section>
-
-
-        <section class="secao localizacao">
-
-            <p class="titulo-pequeno">LOCALIZAÇÃO</p>
-
-            <h2>Onde nos encontrar</h2>
-
-
-            <div class="cartao-local">
-
-                <span class="icone-local">●</span>
-
-                <div>
-                    <strong>Endereço</strong>
-
-                    <p>
-                        Rua das Palmeiras, 123<br>
-                        Centro - SP
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="cartao-local">
-
-                <span class="icone-local">◷</span>
-
-                <div>
-
-                    <strong>Horários</strong>
-
-                    <p>
-                        Terça a Sexta <b>11h — 22h</b><br>
-                        Sábado <b>11h — 22h</b><br>
-                        Domingo <b>11h — 21h</b>
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <a href="https://wa.me/5511999999999"
-               class="botao botao-principal botao-largo">
-                Reservas e pedidos
-            </a>
-
-
-            <img
-                class="mapa"
-                src="imagens/mapa.jpg"
-                alt="Mapa de localização da pastelaria"
-            >
-
-        </section>
-
-    </main>
-
-
-    <footer class="rodape">
-
-        <div class="logo rodape-logo">
-            🥟 Pastel da Ana
-        </div>
-
-        <p>
-            Pastéis artesanais feitos com carinho para você.
-        </p>
-
-
-        <div class="links-rodape">
-
-            <div>
-
-                <h3>Navegação</h3>
-
-                <a href="#inicio">Início</a>
-                <a href="#ofertas">Promoções</a>
-                <a href="#cardapio">Cardápio</a>
-                <a href="#contato">Localização</a>
-
-            </div>
-
-
-            <div>
-
-                <h3>Contato</h3>
-
-                <p>Rua das Palmeiras, 123</p>
-                <p>(11) 99999-9999</p>
-                <p>contato@pasteldaana.com</p>
-
-            </div>
-
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Carne</h3>
+          </div>
+          <strong>R$ 13,00</strong>
         </div>
 
 
-        <p class="direitos">
-            © 2026 Pastel da Ana. Todos os direitos reservados.
-        </p>
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Carne e azeitona</h3>
+          </div>
+          <strong>R$ 14,00</strong>
+        </div>
 
-    </footer>
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Carne, queijo e azeitona</h3>
+          </div>
+          <strong>R$ 15,00</strong>
+        </div>
 
 
-    <script src="script/script.js"></script>
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Carne e queijo</h3>
+          </div>
+          <strong>R$ 14,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Carne e palmito</h3>
+          </div>
+          <strong>R$ 15,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Carne, queijo e palmito</h3>
+          </div>
+          <strong>R$ 17,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Carne, queijo, palmito e catupiry</h3>
+          </div>
+          <strong>R$ 18,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Carne e catupiry</h3>
+          </div>
+          <strong>R$ 15,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Pizza</h3>
+          </div>
+          <strong>R$ 12,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Queijo</h3>
+          </div>
+          <strong>R$ 12,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Queijo e Catupiry</h3>
+          </div>
+          <strong>R$ 14,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Frango</h3>
+          </div>
+          <strong>R$ 12,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Frango e queijo</h3>
+          </div>
+          <strong>R$ 14,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Frango e catupiry</h3>
+          </div>
+          <strong>R$ 14,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Frango, queijo e catupiry</h3>
+          </div>
+          <strong>R$ 16,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Frango, queijo e palmito</h3>
+          </div>
+          <strong>R$ 17,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Frango, palmito e catupiry</h3>
+          </div>
+          <strong>R$ 17,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Calabresa e queijo</h3>
+          </div>
+          <strong>R$ 14,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Calabresa e catupiry</h3>
+          </div>
+          <strong>R$ 14,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Calabresa, queijo e catupiry</h3>
+          </div>
+          <strong>R$ 15,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Brócolis e queijo</h3>
+          </div>
+          <strong>R$ 13,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Brócolis, queijo e Bacon</h3>
+          </div>
+          <strong>R$ 15,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Palmito</h3>
+          </div>
+          <strong>R$ 15,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Palmito e queijo</h3>
+          </div>
+          <strong>R$ 16,00</strong>
+        </div>
+
+
+        <div class="item-cardapio" data-tipo="salgado">
+          <div>
+            <h3>Palmito com Catupiry</h3>
+          </div>
+          <strong>R$ 17,00</strong>
+        </div>
+
+
+        <!-- PASTÉIS DOCES -->
+
+        <div class="item-cardapio escondido" data-tipo="doce">
+          <div>
+            <h3>Chocolate</h3>
+          </div>
+          <strong>R$ 14,00</strong>
+        </div>
+
+
+        <div class="item-cardapio escondido" data-tipo="doce">
+          <div>
+            <h3>Doce de leite</h3>
+          </div>
+          <strong>R$ 14,00</strong>
+        </div>
+
+
+        <div class="item-cardapio escondido" data-tipo="doce">
+          <div>
+            <h3>Romeu e Julieta</h3>
+          </div>
+          <strong>R$ 14,00</strong>
+        </div>
+
+
+        <!-- ESPETOS -->
+
+        <div class="item-cardapio escondido" data-tipo="espeto">
+          <div>
+            <h3>Espeto</h3>
+          </div>
+          <strong>R$ 8,00</strong>
+        </div>
+
+
+        <div class="item-cardapio escondido" data-tipo="espeto">
+          <div>
+            <h3>Espeto carneiro</h3>
+          </div>
+          <strong>R$ 10,00</strong>
+        </div>
+
+
+        <!-- BEBIDAS -->
+
+        <div class="item-cardapio escondido" data-tipo="bebida">
+          <div>
+            <h3>Refrigerante</h3>
+            <p>Lata 350 ml</p>
+          </div>
+          <strong>R$ 5,00</strong>
+        </div>
+
+
+        <div class="item-cardapio escondido" data-tipo="bebida">
+          <div>
+            <h3>Suco natural</h3>
+            <p>Sabores do dia</p>
+          </div>
+          <strong>R$ 7,00</strong>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="secao" id="contato">
+
+      <p class="titulo-pequeno">SIGA A GENTE</p>
+
+      <h2>Pastel da Ana</h2>
+
+      <p class="texto-central">
+        Acompanhe as novidades, promoções e receitas nas nossas redes.
+      </p>
+
+      <div class="lista-redes">
+
+        <a href="#" class="cartao-rede">
+          <span>◎</span>
+
+          <div>
+            <strong>Instagram</strong>
+            <small>@pasteldaana</small>
+          </div>
+        </a>
+
+
+        <a href="#" class="cartao-rede">
+          <span>f</span>
+
+          <div>
+            <strong>Facebook</strong>
+            <small>/pasteldaana</small>
+          </div>
+        </a>
+
+
+        <a href="https://wa.me/5511999999999" class="cartao-rede">
+          <span>◔</span>
+
+          <div>
+            <strong>WhatsApp</strong>
+            <small>Peça pelo WhatsApp</small>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+
+    <section class="secao localizacao">
+
+      <p class="titulo-pequeno">LOCALIZAÇÃO</p>
+
+      <h2>Onde nos encontrar</h2>
+
+
+      <div class="cartao-local">
+
+        <span class="icone-local">●</span>
+
+        <div>
+          <strong>Endereço</strong>
+
+          <p>
+            Rua das Palmeiras, 123<br>
+            Centro - SP
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="cartao-local">
+
+        <span class="icone-local">◷</span>
+
+        <div>
+
+          <strong>Horários</strong>
+
+          <p>
+            Terça a Sexta <b>11h — 22h</b><br>
+            Sábado <b>11h — 22h</b><br>
+            Domingo <b>11h — 21h</b>
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <a href="https://wa.me/5511999999999" class="botao botao-principal botao-largo">
+        Reservas e pedidos
+      </a>
+
+
+      <img class="mapa" src="imagens/mapa.jpg" alt="Mapa de localização da pastelaria">
+
+    </section>
+
+  </main>
+
+
+  <footer class="rodape">
+
+    <div class="logo rodape-logo">
+      🥟 Pastel da Ana
+    </div>
+
+    <p>
+      Pastéis artesanais feitos com carinho para você.
+    </p>
+
+
+    <div class="links-rodape">
+
+      <div>
+
+        <h3>Navegação</h3>
+
+        <a href="#inicio">Início</a>
+        <a href="#ofertas">Promoções</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#contato">Localização</a>
+
+      </div>
+
+
+      <div>
+
+        <h3>Contato</h3>
+
+        <p>Rua das Palmeiras, 123</p>
+        <p>(11) 99999-9999</p>
+        <p>contato@pasteldaana.com</p>
+
+      </div>
+
+    </div>
+
+
+    <p class="direitos">
+      © 2026 Pastel da Ana. Todos os direitos reservados.
+    </p>
+
+  </footer>
+
+
+  <script src="script/script.js"></script>
 
 </body>
+
 </html>
 ```
