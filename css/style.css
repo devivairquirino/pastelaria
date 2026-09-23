@@ -1,4 +1,7 @@
-/* Configurações básicas */
+/*
+   CONFIGURAÇÕES BÁSICAS
+  */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +10,8 @@
 
 html {
     scroll-behavior: smooth;
+
+    font-size: 25px;
 }
 
 body {
@@ -14,6 +19,7 @@ body {
     color: #222;
     background: #fff;
     line-height: 1.5;
+    font-size: 1rem;
 }
 
 a {
@@ -26,10 +32,14 @@ img {
     display: block;
 }
 
-/* Cabeçalho */
+
+/* 
+   CABEÇALHO
+ */
+
 .cabecalho {
-    height: 58px;
-    padding: 0 18px;
+    height: 90px;
+    padding: 35px 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,24 +55,45 @@ img {
     align-items: center;
     gap: 7px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .logo-icone {
-    font-size: 21px;
+    width: 2rem;
+    height: 2rem;
+}
+
+.logo-texto-container {
+    display: flex;
+    font-size: 1.25rem;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-texto {
+    font-size: 0.75rem;
+    color: #900020;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
 .botao-menu {
     border: 0;
     background: none;
-    font-size: 22px;
+    font-size: 1.5rem;
+    font-weight: bold;
     cursor: pointer;
 }
+
+
+/* 
+   MENU
+*/
 
 .menu {
     display: none;
     position: absolute;
-    top: 58px;
+    top: 90px;
     left: 0;
     width: 100%;
     background: white;
@@ -77,10 +108,31 @@ img {
 }
 
 .menu a {
-    font-size: 14px;
+    font-size: 0.875rem;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 18px;
 }
 
-/* Primeira seção */
+.menu a:hover {
+    background-color: #900020;
+    font-weight: bold;
+    color: white;
+}
+
+.botao-pedir {
+    background-color: #f1a800;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 18px;
+    font-weight: bold;
+}
+
+
+/* 
+   PRIMEIRA SEÇÃO
+*/
+
 .inicio {
     padding: 18px;
 }
@@ -103,7 +155,7 @@ img {
     background: white;
     border-radius: 12px;
     padding: 8px 12px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: bold;
     box-shadow: 0 2px 10px #0002;
 }
@@ -114,15 +166,16 @@ img {
 
 .etiqueta,
 .titulo-pequeno {
-    color: #a90025;
-    font-size: 9px;
+    color: #f1a800;
+    font-size: 0.5625rem;
     font-weight: bold;
     letter-spacing: 1px;
+    text-align: center;
     margin-top: 24px;
 }
 
 .inicio h1 {
-    font-size: 29px;
+    font-size: 1.8125rem;
     line-height: 1.05;
     margin: 8px 0;
 }
@@ -132,7 +185,7 @@ img {
 }
 
 .texto-inicial {
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #666;
 }
 
@@ -146,7 +199,7 @@ img {
     display: inline-block;
     padding: 10px 14px;
     border-radius: 20px;
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: bold;
     text-align: center;
 }
@@ -161,14 +214,20 @@ img {
     border: 1px solid #ddd;
 }
 
-/* Seções */
+
+/*
+   SEÇÕES
+ */
+
 .secao {
     padding: 35px 18px;
+
 }
 
 .secao h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-top: 3px;
+    text-align: center;
 }
 
 .linha-titulo {
@@ -197,7 +256,7 @@ img {
     color: white;
     padding: 3px 7px;
     border-radius: 8px;
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-weight: bold;
 }
 
@@ -207,27 +266,31 @@ img {
 }
 
 .cartao-oferta h3 {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-top: 7px;
 }
 
 .cartao-oferta p {
     color: #777;
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 .cartao-oferta strong {
     color: #900020;
-    font-size: 15px;
+    font-size: 0.9375rem;
     margin-right: 5px;
 }
 
 .cartao-oferta del {
     color: #999;
-    font-size: 9px;
+    font-size: 0.5625rem;
 }
 
-/* Cardápio */
+
+/*
+   CARDÁPIO
+*/
+
 .secao-cardapio {
     background: #fbf7f1;
 }
@@ -237,6 +300,7 @@ img {
     justify-content: center;
     gap: 4px;
     margin-bottom: 18px;
+    flex-wrap: wrap;
 }
 
 .filtro {
@@ -244,7 +308,7 @@ img {
     background: white;
     padding: 7px 12px;
     border-radius: 15px;
-    font-size: 10px;
+    font-size: 0.625rem;
     cursor: pointer;
 }
 
@@ -256,7 +320,22 @@ img {
 .lista-cardapio {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
+}
+
+.grupo-cardapio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titulo-grupo {
+    color: #900020;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding-bottom: 6px;
+    margin-top: 4px;
+    border-bottom: 2px solid #e9d9d1;
 }
 
 .item-cardapio {
@@ -268,29 +347,33 @@ img {
 }
 
 .item-cardapio h3 {
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 .item-cardapio p {
     color: #888;
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .item-cardapio strong {
     color: #333;
-    font-size: 10px;
+    font-size: 0.625rem;
     white-space: nowrap;
 }
 
-.item-cardapio.escondido {
+.grupo-cardapio.escondido {
     display: none;
 }
 
-/* Redes sociais */
+
+/*
+   REDES SOCIAIS
+*/
+
 .texto-central {
     text-align: center;
     color: #777;
-    font-size: 11px;
+    font-size: 0.6875rem;
     max-width: 300px;
     margin: 5px auto 18px;
 }
@@ -328,15 +411,19 @@ img {
 }
 
 .cartao-rede strong {
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 .cartao-rede small {
     color: #999;
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
-/* Localização */
+
+/*
+   LOCALIZAÇÃO
+*/
+
 .localizacao {
     background: #fffaf4;
 }
@@ -351,12 +438,12 @@ img {
 }
 
 .cartao-local strong {
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 .cartao-local p {
     color: #777;
-    font-size: 9px;
+    font-size: 0.5625rem;
 }
 
 .cartao-local b {
@@ -378,12 +465,16 @@ img {
     margin-top: 10px;
 }
 
-/* Rodapé */
+
+/*
+   RODAPÉ
+*/
+
 .rodape {
     background: #050505;
     color: white;
     padding: 30px 18px;
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 .rodape p {
@@ -406,7 +497,7 @@ img {
 
 .links-rodape h3 {
     color: #d59a00;
-    font-size: 10px;
+    font-size: 0.625rem;
     margin-bottom: 8px;
     text-transform: uppercase;
 }
@@ -421,11 +512,16 @@ img {
     border-top: 1px solid #222;
     margin-top: 25px;
     padding-top: 15px;
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
-/* Tela maior */
-@media (min-width: 700px) {
+
+/*
+   TELA MAIOR
+*/
+
+@media (min-width: 850px) {
+
     .cabecalho {
         padding: 0 7%;
     }
@@ -471,4 +567,3 @@ img {
         height: 350px;
     }
 }
-    
