@@ -15,29 +15,46 @@ linksMenu.forEach(function (link) {
     });
 });
 
-// Filtro simples do cardápio
+// Filtro do cardápio por grupos
+// Cada grupo reúne um título + seus produtos e possui um data-tipo.
+// Assim, o título nunca aparece sozinho em outra categoria.
 const botoesFiltro = document.querySelectorAll(".filtro");
-const itensCardapio = document.querySelectorAll(".item-cardapio");
+const gruposCardapio = document.querySelectorAll(".grupo-cardapio");
+
+function mostrarCategoria(tipoEscolhido) {
+    gruposCardapio.forEach(function (grupo) {
+        const tipoGrupo = grupo.getAttribute("data-tipo");
+
+        if (tipoGrupo === tipoEscolhido) {
+            grupo.classList.remove("escondido");
+        } else {
+            grupo.classList.add("escondido");
+        }
+    });
+}
 
 botoesFiltro.forEach(function (botao) {
     botao.addEventListener("click", function () {
 
+        // Remove o estado ativo de todos os botões
         botoesFiltro.forEach(function (outroBotao) {
             outroBotao.classList.remove("ativo");
         });
 
+        // Ativa somente o botão clicado
         botao.classList.add("ativo");
 
+        // Descobre a categoria escolhida
         const tipoEscolhido = botao.getAttribute("data-tipo");
 
-        itensCardapio.forEach(function (item) {
-            const tipoItem = item.getAttribute("data-tipo");
-
-            if (tipoItem === tipoEscolhido) {
-                item.classList.remove("escondido");
-            } else {
-                item.classList.add("escondido");
-            }
-        });
+        // Mostra todos os grupos daquela categoria e esconde os demais
+        mostrarCategoria(tipoEscolhido);
     });
 });
+
+// Deixa a primeira categoria visível ao carregar a página
+const filtroInicial = document.querySelector(".filtro.ativo");
+
+if (filtroInicial) {
+    mostrarCategoria(filtroInicial.getAttribute("data-tipo"));
+}
