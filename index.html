@@ -1,4 +1,4 @@
-<html>
+
 <!DOCTYPE html>
 
 <html lang="pt-BR">
@@ -23,7 +23,7 @@
     <button class="botao-menu" id="botao-menu">☰</button>
     <nav class="menu" id="menu">
       <a href="#inicio">Início</a>
-      <a href="#promocoes">Promoções</a>
+      <a href="#galeria">Galeria</a>
       <a href="#cardapio">Cardápio</a>
       <a href="#contato">Contato</a>
       <a class="botao botao-pedir"
@@ -55,38 +55,48 @@
         </a>
       </div>
     </section>
-    <section class="secao" id="ofertas">
-      <p class="titulo-pequeno">PROMOÇÕES</p>
-      <h2>Ofertas para alegrar o dia</h2>
+    <section class="secao" id="galeria">
+      <p class="titulo-pequeno">CONHEÇA NOSSO ESPAÇO</p>
+      <h2>Um pouco de nossa pastelaria</h2>
       <div class="linha-titulo"></div>
-      <div class="lista-ofertas">
-        <article class="cartao-oferta">
-          <span class="etiqueta-oferta">
-            MAIS VENDIDO
-          </span>
-          <h3>Combo Duplo</h3>
-          <p>2 pastéis + 2 bebidas</p>
-          <strong>R$ 19,90</strong>
-          <del>R$ 22,90</del>
-        </article>
-        <article class="cartao-oferta">
-          <span class="etiqueta-oferta amarela">
-            ECONOMIZE
-          </span>
-          <h3>Trio da Ana</h3>
-          <p>2 pastéis doces + 1 salgado</p>
-          <strong>R$ 16,00</strong>
-          <del>R$ 18,50</del>
-        </article>
-        <article class="cartao-oferta">
-          <span class="etiqueta-oferta">
-            SUPER OFERTA
-          </span>
-          <h3>Hora do Pastel</h3>
-          <p>Das 14h às 17h, com desconto</p>
-          <strong>-20%</strong>
-        </article>
-      </div>
+
+      <div class="carrossel">
+
+        <div class="carrossel-viewport">
+            <div class="carrossel-track">
+
+                <div class="slide">
+                    <img src="assets/images/foto1.jpeg" alt="Interior da Pastelaria">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/images/foto2.jpeg" alt="Pastel sendo preparado">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/images/foto3.jpeg" alt="Clientes na pastelaria">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/images/foto4.jpeg" alt="Pastéis da pastelaria">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Setas -->
+        <div class="carrossel-botoes">
+            <button class="carrossel-btn anterior" aria-label="Imagem anterior">
+                ‹
+            </button>
+
+            <button class="carrossel-btn proximo" aria-label="Próxima imagem">
+                ›
+            </button>
+        </div>
+
+    </div>
+
     </section>
     <section class="secao secao-cardapio" id="cardapio">
       <p class="titulo-pequeno">CARDÁPIO</p>
@@ -580,8 +590,10 @@
         target="_blank">
         Reservas e pedidos
       </a>
-      <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.385345271914!2d-49.4066985!3d-22.4145176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf83447c1faea7%3A0x7df5198319de6f75!2sPastel%20da%20Ana!5e0!3m2!1sen!2sbr!4v1790191098012!5m2!1sen!2sbr" width="100%" height="350"
-        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      <iframe class="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.385345271914!2d-49.4066985!3d-22.4145176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf83447c1faea7%3A0x7df5198319de6f75!2sPastel%20da%20Ana!5e0!3m2!1sen!2sbr!4v1790191098012!5m2!1sen!2sbr"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </section>
   </main>
@@ -612,7 +624,5 @@
   </footer>
   <script src="script/script.js"></script>
 </body>
-
-</html>
 
 </html>
